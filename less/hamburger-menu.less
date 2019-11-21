@@ -1,0 +1,72 @@
+header {
+    .mobile-menu {
+        display: flex;
+        position: relative;
+        width: 100%;
+
+        .checkbox1:checked~.hidden-menu-items {
+            visibility: visible;
+            transform: translateY(0px);
+            transition: .3s;
+        }
+
+        .visuallyHidden {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .hamburger-icon {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            width: 35px;
+            height: 4px;
+            background-color: white;
+            margin-top: 10px;
+            z-index: 2;
+
+        }
+
+
+
+
+
+        .hamburger-icon::before,
+        .hamburger-icon::after {
+            content: '';
+            position: absolute;
+            width: 35px;
+            height: 4px;
+            background-color: white;
+            transition: 1s;
+        }
+
+        .hamburger-icon::before {
+            top: -10px;
+        }
+
+        .hamburger-icon::after {
+            top: 10px;
+        }
+
+        .checkbox1:checked+.hamburger-icon {
+            visibility: hidden;
+        }
+
+
+
+        .checkbox1:checked+.hamburger-icon::after {
+            transform: rotate(45deg) translate(-8px, -6px);
+            visibility: visible;
+        }
+
+
+
+        .checkbox1:checked+.hamburger-icon::before {
+            transform: rotate(-45deg) translate(-8px, 6px);
+            visibility: visible;
+        }
+
+
+    }
+}

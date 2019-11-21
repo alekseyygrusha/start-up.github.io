@@ -1,0 +1,189 @@
+@media (max-width: 1600px) {
+    html:root {
+        --section-padding: 100px;
+    }
+
+    main .works {
+        nav {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .container {
+            .photo {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1280px) {
+    html:root {
+        --section-padding: 60px;
+    }
+
+    main .blog {
+        .container {
+            .block {
+                .photo {
+                    // max-width: 360px;
+                }
+            }
+        }
+    }
+
+    main .get-in-touch {
+        .container {
+            flex-direction: column;
+            align-items: center;
+
+            .adress {
+                .block {}
+            }
+
+            .form {}
+        }
+    }
+
+}
+
+@media (max-width: 1024px) {
+    html:root {
+        --section-padding: 40px;
+    }
+
+    main .blog {
+        .container {
+            .block {
+                .photo {
+                    // max-width: 300px;
+                }
+            }
+        }
+    }
+
+    main .blog {
+        .container {
+            max-width: 460px;
+
+            .block {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    html:root {
+        --section-padding: 30px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    main {
+        section {
+            .content {
+                p .content-text {
+                    flex-basis: 80%;
+                }
+            }
+        }
+    }
+
+
+    .welcome {
+        height: 100%;
+        min-height: 770px;
+
+        h1 {}
+    }
+
+    main .service {
+        text-align: center;
+
+        .grid {
+            display: flex;
+
+            .wrap {
+                flex-basis: 80%;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    main .about-us {
+        .content {
+            .content-text {
+                flex-basis: 100%;
+            }
+        }
+    }
+
+
+
+
+
+}
+
+@media (max-width: 540px) {
+    html:root {
+        --section-padding: 10px;
+    }
+
+    header {
+        .main-menu {
+            display: none
+        }
+
+        .mobile-menu {
+            display: flex;
+        }
+    }
+
+    main .blog {
+        .container {
+            max-width: 460px;
+
+            .block {}
+        }
+    }
+
+    main .get-in-touch {
+        .container {
+            .form {
+
+                .name-block,
+                .e-mail-block {
+                    flex-wrap: wrap;
+
+                    .name-form,
+                    .e-mail-form {
+                        margin-right: 0;
+                        margin-bottom: 10px;
+                    }
+
+                    input {
+                        flex-basis: 100%;
+                    }
+                }
+
+                .massage-block {
+                    // margin-top: 15px;
+                }
+
+
+            }
+        }
+    }
+
+
+}

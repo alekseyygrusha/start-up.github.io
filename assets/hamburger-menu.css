@@ -1,0 +1,50 @@
+header .mobile-menu {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+header .mobile-menu .checkbox1:checked ~ .hidden-menu-items {
+  visibility: visible;
+  transform: translateY(0px);
+  transition: .3s;
+}
+header .mobile-menu .visuallyHidden {
+  position: absolute;
+  visibility: hidden;
+}
+header .mobile-menu .hamburger-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  margin-top: 10px;
+  z-index: 2;
+}
+header .mobile-menu .hamburger-icon::before,
+header .mobile-menu .hamburger-icon::after {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  transition: 1s;
+}
+header .mobile-menu .hamburger-icon::before {
+  top: -10px;
+}
+header .mobile-menu .hamburger-icon::after {
+  top: 10px;
+}
+header .mobile-menu .checkbox1:checked + .hamburger-icon {
+  visibility: hidden;
+}
+header .mobile-menu .checkbox1:checked + .hamburger-icon::after {
+  transform: rotate(45deg) translate(-8px, -6px);
+  visibility: visible;
+}
+header .mobile-menu .checkbox1:checked + .hamburger-icon::before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+  visibility: visible;
+}
